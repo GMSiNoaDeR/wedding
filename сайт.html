@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&subset=cyrillic,cyrillic-ext&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&subset=cyrillic,cyrillic-ext&display=swap" rel="stylesheet">
+    <title>Свадьба - Даниил & Екатерина</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-size: 24px;
+            background-color: #f3f7f5;
+            color: #4b4f4a;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+.container {
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Растягивает фон, сохраняя пропорции */
+    min-height: 100vh; /* Минимальная высота = высота экрана */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый, если нужно */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    animation: fadeIn 1.5s ease;
+}
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            animation: fadeIn 2s ease;
+        }
+.header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 72px;
+    color: #6b8f89;
+    margin: 0;
+	    text-shadow: 
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff;
+}
+}
+        .calendar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 0;
+            animation: fadeIn 2.5s ease;
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 0;
+            animation: fadeIn 2.5s ease;
+        }
+        .photos img {
+
+            min-width: 100px;
+            border-radius: 10px;
+            transition: transform 0.5s;
+						    text-shadow: 
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff;
+        }
+        .photos img:hover {
+            transform: scale(1.05);
+        }
+        .main-invite {
+            text-align: center;
+            padding: 40px 0;
+            animation: fadeIn 2.5s ease;
+        }
+        .main-invite h2 {
+    font-family: 'Great Vibes', cursive;
+            font-size: 92px;
+            color: #6b8f89;
+            margin-bottom: 10px;
+			    text-shadow: 
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff;
+}
+        }
+        .main-invite p {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .rsvp-button {
+            display: inline-block;
+            background-color: #a3c3b8;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 32px;
+            transition: background-color 0.3s;
+        }
+        .rsvp-button:hover {
+            background-color: #88a79c;
+        }
+        .section {
+		background-color: rgba(249, 253, 252, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+            padding: 40px 20px;
+
+            animation: fadeIn 2.5s ease;
+        }
+.section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 62px;
+    color: #6b8f89;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff,
+        0 0 15px #fff;
+}
+        .section p {
+            font-size: 24px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .program {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px 20px;
+            animation: fadeIn 2.5s ease;
+        }
+        .program-item {
+            text-align: center;
+		background-color: rgba(249, 253, 252, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+            transition: transform 0.5s;
+        }
+        .program-item:hover {
+            transform: translateY(-5px);
+        }
+        .program-item img {
+
+
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            padding: 20px 0;
+            animation: fadeIn 2.5s ease;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+
+			            .calendar img {
+                width: 100%;
+            }
+            .program {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="photos">
+            <img src="test.png" alt="Photo 2">
+        </div>
+
+        <div class="main-invite">
+            <h2><br>Дорогие гости!</h2>
+            <p>
+			<br><br><br>
+			С огромным удовольствием приглашаем вас на нашу Свадьбу,<br>
+			чтобы разделить с нами радость этого дня!
+			
+			
+			</p>
+            <p style="font-size: 70px; margin-top: 10px; ">06.09.2025</p>
+			        <div class="calendar">
+            <img src="calendar.png" alt="Calendar" width="600" height="600">
+								<a href="https://forms.gle/V7KkxVdZwBjugsvcA" class="rsvp-button"><i class="fas fa-link"></i> Обязательный опрос</a>
+        </div>
+        </div>
+
+
+
+        <div class="section">
+		<div class="main-invite">
+            <h2>Тайминг мероприятия</h2>
+			</div>
+            <div class="program">
+                <div class="program-item">
+                    <img src="rings.png" alt="ZAGS"  width="100" height="100">
+                    <h3>Регистрация в ЗАГСе - 12:20</h3>
+                    <p>Адрес: пр. Стачек, 45, Санкт-Петербург</p>
+                </div>
+			    <div class="program-item">
+                    <img src="photo.png" alt="photo" width="100" height="100">
+                    <h3>Прогулка & Фотосессия - 13:00</h3>
+                    <p>Достопримечательности Санкт-Петербурга</p>
+                </div>
+                <div class="program-item">
+                    <img src="bokal.png" alt="bokal" width="100" height="100">
+                    <h3>Сбор гостей - 16:00</h3>
+                    <p>Банкетный зал "Зефир"<br>Адрес: Старо-Петергофский пр.,<br> 21 корпус 5</p>
+                </div>
+                <div class="program-item">
+                    <img src="food.png" alt="food" width="100" height="100">
+                    <h3>Банкет - 16:30</h3>
+                    <p>Банкетный зал "Зефир"<br>Адрес: Старо-Петергофский пр.,<br> 21 корпус 5</p>
+                </div>
+            </div>
+        </div>
+		
+        <div class="section">
+		<div class="main-invite">
+            <h2>Пожелания</h2>
+			</div>
+            <p><i class="fas fa-gift"></i>  Уважаемые гости, свои теплые слова и пожелания приносите в сердцах, а подарки - в конвертах.<br><br>
+			<i class="fas fa-clover"></i> Мы очень ценим вашу заботу, но если решите подарить цветы —
+давайте сделаем это командно! Один шикарный букет от компании —
+и нам не придётся арендовать грузовик для цветов.<i class="fas fa-face-smile-wink"></i><br><br>
+<i class="fas fa-comment"></i>Не забудьте пройти опрос выше.</p>
+<div class="main-invite">
+            <h2>Свадебный чат</h2>
+			</div>
+			<p><i class="fas fa-paper-plane"></i> Чтобы быть в курсе всех новостей, а также, чтобы обмен фото и видео после мероприятия был прост, предлагаем Вам подключиться к Телеграм-каналу по коду ниже.</p>
+            <div class="photos" style="padding-top: 20px;">
+                <img src="story1.png" alt="Story 1"width="200" height="200">
+            </div>
+			<div class="main-invite">
+								<a href="https://t.me/+VC3vo685ILJjOTky" class="rsvp-button"><i class="fas fa-link"></i> Ссылка на Чат <i class="fas fa-paper-plane"></i></a>	
+								
+        </div>
+		</div>
+<div class="section" style="margin-top: 20px;">
+    <div class="main-invite">
+        <h2>До свадьбы осталось:</h2>
+    </div>
+    <div id="countdown" style="text-align: center; font-size: 28px; margin: 20px 0;">
+        <span id="days" style="font-weight: bold;"></span> дней 
+        <span id="hours" style="font-weight: bold;"></span> часов 
+        <span id="minutes" style="font-weight: bold;"></span> минут 
+        <span id="seconds" style="font-weight: bold;"></span> секунд
+    </div>
+</div>
+    </div>
+	<script>
+    // Дата свадьбы: 6 сентября 2025, 12:00 (можно изменить)
+    const weddingDate = new Date('2025-09-06T12:20:00').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        // Расчет времени
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Вставка в HTML
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+
+        // Если время вышло
+        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = '<span style="color: #6b8f89;">🎉 Сегодня наш день! 🎉</span>';
+        }
+    }
+
+    // Запускаем таймер
+    const timer = setInterval(updateCountdown, 1000);
+    updateCountdown(); // Чтобы сразу показалось, а не ждать 1 секунду
+</script>
+</body>
+</html>
