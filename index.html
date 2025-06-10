@@ -50,14 +50,35 @@ font-size: 24px;
         0 0 15px #fff;
 }
 }
-        .calendar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px 0;
-            animation: fadeIn 2.5s ease;
-        }
+/* Контейнер */
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 600px; /* Как в вашем оригинальном дизайне */
+    margin: 0 auto; /* Центрирование */
+    overflow: hidden; /* Защита от переполнения */
+    animation: fadeIn 2.5s ease;
+}
+
+/* Изображения внутри */
+.calendar img {
+    max-width: 100%;
+    height: auto;
+    width: auto; /* Важно! Отменяет принудительное растягивание */
+    display: block;
+    object-fit: contain; /* Гарантирует правильное масштабирование */
+}
+
+/* Для мобильных */
+@media (max-width: 600px) {
+    .calendar img {
+        width: 100%; /* На маленьких экранах - во всю ширину */
+    }
+}
         .photos {
             display: flex;
             flex-wrap: wrap;
@@ -179,7 +200,7 @@ font-size: 24px;
 
 			            .calendar img {
                 width: 100%;
-		height: 100%;
+				height: 100%;
             }
             .program {
                 grid-template-columns: 1fr;
@@ -206,7 +227,7 @@ font-size: 24px;
 			</p>
             <p style="font-size: 70px; margin-top: 10px; ">06.09.2025</p>
 			        <div class="calendar">
-            <img src="calendar.png" alt="Calendar" width="600" height="600">
+            <img src="calendar.png" alt="Calendar">
 								<a href="https://forms.gle/V7KkxVdZwBjugsvcA" class="rsvp-button"><i class="fas fa-link"></i> Обязательный опрос</a>
         </div>
         </div>
